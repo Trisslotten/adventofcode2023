@@ -1,5 +1,3 @@
-{-# LANGUAGE OverloadedStrings #-}
-
 import Data.IntMap (mapAccum, mapWithKey)
 import Data.List (elemIndex, findIndex, splitAt)
 import Data.List.Split (splitOn)
@@ -49,10 +47,8 @@ handleRound round colorMap = do
   let roundMap = foldl (flip updateIfBigger) colorMap colorCounts
   roundMap
 
-updateIfBigger :: (Ord k) => (k, Int) -> Map.Map k Int -> Map.Map k Int
 updateIfBigger (key, newValue) = Map.alter alterFunction key
   where
-    alterFunction :: Maybe Int -> Maybe Int
     alterFunction existingValue =
       case existingValue of
         Just oldValue -> Just (max oldValue newValue)
