@@ -2,8 +2,8 @@ import Data.Char (isDigit)
 import Data.List (findIndex)
 import Data.Map qualified as Map
 import Data.Maybe (isJust)
-import System.Environment (getArgs)
 import Debug.Trace (trace)
+import System.Environment (getArgs)
 
 numberIsPart (x, y) numberSize engine = do
   let leftRight = ((engine !! y) !! (x - 1)) : [(engine !! y) !! (x + numberSize)]
@@ -78,9 +78,9 @@ data State2 = State2
 hasIndex (Nothing, Nothing, Nothing) = False
 hasIndex _ = True
 
-getIndex (x, y) (Just upperIndex, Nothing, Nothing) = Just (x + upperIndex-1, y - 1)
-getIndex (x, y) (Nothing, Just middleIndex, Nothing) = Just (x + middleIndex-1, y)
-getIndex (x, y) (Nothing, Nothing, Just lowerIndex) = Just (x + lowerIndex-1, y + 1)
+getIndex (x, y) (Just upperIndex, Nothing, Nothing) = Just (x + upperIndex - 1, y - 1)
+getIndex (x, y) (Nothing, Just middleIndex, Nothing) = Just (x + middleIndex - 1, y)
+getIndex (x, y) (Nothing, Nothing, Just lowerIndex) = Just (x + lowerIndex - 1, y + 1)
 
 numberIsPart2 :: (Int, Int) -> Int -> [[Char]] -> Maybe (Int, Int, Char)
 numberIsPart2 (x, y) numberSize engine = do
