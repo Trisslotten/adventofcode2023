@@ -1,5 +1,5 @@
 import System.Environment (getArgs)
-
+import Data.List.Split (splitOn)
 part1 lines = lines
 
 part2 lines = lines

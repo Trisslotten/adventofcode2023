@@ -3,3 +3,5 @@
 **.o
 **/launch.json
 **/tasks.json
+
+**/target/**
