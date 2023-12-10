@@ -24,12 +24,18 @@
             "type": "f5anything",
             "request": "launch",
             "command": "ghc day04/day04.hs; day04/day04.exe day04/input.txt",
-        }
+        },
         {
             "name": "Day07",
             "type": "f5anything",
             "request": "launch",
             "command": "ghc day07/day07.hs; day07/day07.exe day07/input.txt",
+        },
+        {
+            "name": "Day09",
+            "type": "f5anything",
+            "request": "launch",
+            "command": "ghc day09/day09.hs; day09/day09.exe day09/input.txt",
         }
     ]
 }
