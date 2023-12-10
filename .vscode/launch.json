@@ -1,0 +1,35 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Day01",
+            "type": "f5anything",
+            "request": "launch",
+            "command": "ghc day01/day01.hs; day01/day01.exe",
+        },
+        {
+            "name": "Day02",
+            "type": "f5anything",
+            "request": "launch",
+            "command": "ghc day02/day02.hs; day02/day02.exe",
+        },
+        {
+            "name": "Day03",
+            "type": "f5anything",
+            "request": "launch",
+            "command": "ghc day03/day03.hs; day03/day03.exe day03/input.txt",
+        },
+        {
+            "name": "Day04",
+            "type": "f5anything",
+            "request": "launch",
+            "command": "ghc day04/day04.hs; day04/day04.exe day04/input.txt",
+        }
+        {
+            "name": "Day07",
+            "type": "f5anything",
+            "request": "launch",
+            "command": "ghc day07/day07.hs; day07/day07.exe day07/input.txt",
+        }
+    ]
+}

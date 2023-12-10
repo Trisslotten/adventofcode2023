@@ -1,7 +1,5 @@
 **.exe
 **.hi
 **.o
-**/launch.json
 **/tasks.json
-
 **/target/**
