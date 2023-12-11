@@ -14,14 +14,6 @@ impl Map {
             self.map[(y * self.width + x) as usize]
         }
     }
-    fn print(&self) {
-        for y in 0..self.height {
-            for x in 0..self.width {
-                print!("{}", self.get(x, y));
-            }
-            println!();
-        }
-    }
     // function to get starting x and y
     fn get_start(&self) -> (i64, i64) {
         for y in 0..self.height {
@@ -291,8 +283,6 @@ pub fn part2(input: &str) -> String {
 
         prev_dir = dir;
     }
-
-    println!("winding number: {}", winding_number);
 
     let mut inside: Vec<bool> = vec![false; (map.width * map.height) as usize];
 
